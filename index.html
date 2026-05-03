@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sabor do Sertão – O verdadeiro sabor do Nordeste</title>
+  <meta name="description" content="Restaurante nordestino com pratos tradicionais feitos com tempero, amor e tradição." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body class="font-inter scroll-smooth">
+
+  <!-- HEADER -->
+  <header id="header" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-transparent">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+
+        <!-- Logo -->
+        <a href="#inicio" class="header-logo flex flex-col items-center justify-center gap-1 group">
+    
+          <div class="text-center">
+            <div class="font-playfair text-xl text-brown-dark font-bold">Casa do Norte</div>
+            <div class="text-xs uppercase tracking-[0.25em] text-orange-soft">Paraíba</div>
+            <div class="header-logo-subtitle mt-1"></div>
+          </div>
+        </a>
+
+        <!-- Nav Desktop -->
+        <nav class="hidden md:flex items-center gap-8">
+          <a href="#inicio" class="nav-link text-sm font-semibold uppercase tracking-wide text-[#6E2C00] hover:text-[#E67E22] transition-colors">Início</a>
+          <a href="#sobre" class="nav-link text-sm font-semibold uppercase tracking-wide text-[#6E2C00] hover:text-[#E67E22] transition-colors">Sobre</a>
+          <a href="#cardapio" class="nav-link text-sm font-semibold uppercase tracking-wide text-[#6E2C00] hover:text-[#E67E22] transition-colors">Cardápio</a>
+          <a href="#destaques" class="nav-link text-sm font-semibold uppercase tracking-wide text-[#6E2C00] hover:text-[#E67E22] transition-colors">Destaques</a>
+          <a href="#contato" class="nav-link text-sm font-semibold uppercase tracking-wide text-[#6E2C00] hover:text-[#E67E22] transition-colors">Contato</a>
+          <a href="https://wa.me/5585999999999" target="_blank" class="btn-scale bg-[#E67E22] hover:bg-[#cf6d17] text-white text-sm font-semibold px-5 py-2.5 rounded-full shadow-md hover:shadow-lg transition-all duration-200">
+            🛒 Pedir Agora
+          </a>
+        </nav>
+
+        <!-- Hamburger -->
+        <button id="menuBtn" class="md:hidden flex flex-col gap-1.5 p-2" aria-label="Menu">
+          <span class="hamburger-line block w-6 h-0.5 bg-[#6E2C00] transition-all duration-300"></span>
+          <span class="hamburger-line block w-6 h-0.5 bg-[#6E2C00] transition-all duration-300"></span>
+          <span class="hamburger-line block w-6 h-0.5 bg-[#6E2C00] transition-all duration-300"></span>
+        </button>
+      </div> 
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="mobile-menu hidden md:hidden bg-bege border-t border-orange-100 shadow-lg">
+      <nav class="flex flex-col px-6 py-4 gap-4">
+        <a href="#inicio" class="mobile-nav-link text-sm font-semibold uppercase tracking-wide text-[#6E2C00] hover:text-[#E67E22] transition-colors">Início</a>
+        <a href="#sobre" class="mobile-nav-link text-sm font-semibold uppercase tracking-wide text-[#6E2C00] hover:text-[#E67E22] transition-colors">Sobre</a>
+        <a href="#cardapio" class="mobile-nav-link text-sm font-semibold uppercase tracking-wide text-[#6E2C00] hover:text-[#E67E22] transition-colors">Cardápio</a>
+        <a href="#destaques" class="mobile-nav-link text-sm font-semibold uppercase tracking-wide text-[#6E2C00] hover:text-[#E67E22] transition-colors">Destaques</a>
+        <a href="#contato" class="mobile-nav-link text-sm font-semibold uppercase tracking-wide text-[#6E2C00] hover:text-[#E67E22] transition-colors">Contato</a>
+        <a href="https://wa.me/5585999999999" target="_blank" class="btn-scale bg-[#E67E22] text-white text-sm font-semibold px-5 py-2.5 rounded-full text-center">🛒 Pedir Agora</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="inicio" class="hero-section relative min-h-screen flex items-center justify-center overflow-hidden section-reveal">
+    <div class="hero-bg absolute inset-0"></div>
+    <div class="hero-wave absolute bottom-0 left-0 right-0"></div>
+    <div class="relative z-10 text-center px-4 max-w-4xl mx-auto pt-32">
+      <span class="inline-block text-xs font-semibold tracking-[0.2em] uppercase text-white/80 bg-white/10 border border-white/20 rounded-full px-4 py-2 mb-6">
+        Tradição &amp; Tempero
+      </span>
+      <h1 class="font-playfair text-5xl sm:text-6xl md:text-7xl font-bold text-white leading-tight mb-6">
+        O verdadeiro sabor<br/>do Nordeste
+      </h1>
+      <p class="text-white/80 text-lg sm:text-xl max-w-xl mx-auto mb-10 leading-relaxed">
+        Feito com tempero, amor e tradição de geração em geração. Descubra a autêntica culinária sertaneja no coração da cidade.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="#cardapio" class="btn-scale bg-[#F4D03F] hover:bg-[#e1c035] text-[#6E2C00] font-bold px-8 py-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-200 text-sm sm:text-base">
+          Ver Cardápio →
+        </a>
+        <a href="#destaques" class="btn-scale bg-transparent border-2 border-white/50 hover:border-white text-white font-semibold px-8 py-4 rounded-full transition-all duration-200 text-sm sm:text-base">
+          ⭐ Destaques da Casa
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOBRE -->
+  <section id="sobre" class="py-24 bg-white section-reveal">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-2 gap-16 items-center">
+        <div>
+          <span class="text-[#E67E22] text-xs font-bold uppercase tracking-widest">Nossa História</span>
+          <h2 class="font-playfair text-4xl md:text-5xl font-bold text-[#6E2C00] mt-3 mb-6">A Nossa História</h2>
+          <p class="text-gray-600 leading-relaxed mb-4">
+            Nascemos no coração do sertão nordestino, onde a terra seca guarda segredos de sabores únicos. Há mais de 7 anos, trazemos para a mesa a autêntica culinária regional, preparada com ingredientes selecionados e receitas passadas de avó para neto.
+          </p>
+          <p class="text-gray-600 leading-relaxed mb-4">
+            Cada prato conta uma história. A carne de sol que seca ao vento do sertão, o baião de dois que aquece a alma, o cabrito que perfuma o ar são tradições que preservamos com carinho e dedicação em cada detalhe do nosso preparo.
+          </p>
+          <p class="text-gray-600 leading-relaxed mb-8">
+            Mais do que um restaurante, somos um encontro de culturas e afetos. Aqui, a mesa é grande e todos são bem-vindos para provar o que o Nordeste tem de melhor.
+          </p>
+          <!-- Stats -->
+          <div class="grid grid-cols-3 gap-6">
+            <div class="text-center p-4 bg-[#FDF2E9] rounded-2xl">
+              <div class="font-playfair text-3xl font-bold text-[#E67E22]">7+</div>
+              <div class="text-xs text-gray-500 mt-1 font-semibold uppercase tracking-wide">Anos</div>
+            </div>
+            <div class="text-center p-4 bg-[#FDF2E9] rounded-2xl">
+              <div class="font-playfair text-3xl font-bold text-[#E67E22]">300+</div>
+              <div class="text-xs text-gray-500 mt-1 font-semibold uppercase tracking-wide">Clientes</div>
+            </div>
+            <div class="text-center p-4 bg-[#FDF2E9] rounded-2xl">
+              <div class="font-playfair text-3xl font-bold text-[#E67E22]">15+</div>
+              <div class="text-xs text-gray-500 mt-1 font-semibold uppercase tracking-wide">Pratos</div>
+            </div>
+          </div>
+        </div>
+        <div class="relative">
+  <div class="about-image-box rounded-3xl overflow-hidden shadow-2xl aspect-[4/5] flex items-center justify-center">
+    <img 
+      src="assets/CASA DO NORTE ABOUT.png" 
+      alt="Sobre o Sabor do Sertão" 
+      class="about-image-img w-full h-full object-cover" 
+    />
+  </div>
+
+  <div class="about-image-overlay absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300 rounded-3xl flex items-end justify-center pb-8">
+    <div class="text-center text-white px-6">
+      <div class="font-playfair text-lg font-bold mb-2">
+        Casa do Norte Paraiba &
+      </div>
+      <p class="text-sm">
+        Restaurante Panela Ariada
+      </p>
+    </div>
+  </div>
+</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CARDÁPIO DA SEMANA -->
+  <section id="cardapio" class="py-20 bg-bege section-reveal">
+    <div class="max-w-7xl mx-auto px-4 sm:px-7 lg:px-6">
+      <div class="menu-week-notice notice-banner reveal">
+        <div class="menu-week-notice-title"><span class="notice-icon"><center></span>Funcionamento
+        cúlinaria</div></center>
+        <center>
+          <p class="menu-week-notice-text">Segunda-feira: fechado</p>
+          <p class="menu-week-notice-text">Terça-feira:
+          </p> Casa aberta, sem funcionamento da cozinha</p>
+          <p class="menu-week-notice-text">Quarta a domingo:
+          </p> cozinha aberta das 7h às 15h</p>
+        </center>
+      </div>
+
+      <div class="menu-week-tabs mb-9">
+        
+        <div class="menu-week-tab-list">
+          <button class="menu-week-tab active" data-day="quarta">Quarta</button>
+          <button class="menu-week-tab" data-day="quinta">Quinta</button>
+          <button class="menu-week-tab" data-day="sexta">Sexta</button>
+          <button class="menu-week-tab" data-day="sabado">Sábado</button>
+          <button class="menu-week-tab" data-day="domingo">Domingo</button>
+        </div>
+      </div>
+
+      <div class="grid gap-8">
+        <!-- Segunda e Terça removidos: menu ativo de Quarta a Domingo -->
+
+        <article id="quarta" class="day-card hidden bg-white rounded-[2rem] border border-[#EDE7DE] shadow-lg overflow-hidden">
+          <div class="day-card-header bg-[#d35400] text-white p-6">
+            <h3 class="day-card-title">Quarta-feira</h3>
+            <p class="day-card-subtitle">Especialidades nordestinas</p>
+          </div>
+          <div class="day-card-body p-6">
+            <div class="dish-grid">
+              <div class="dish-card">
+                <img class="dish-card-img" src="assets\images de blocos\PRATOS\MOCOFÁVA.png" alt="Mocofava">
+                <div class="dish-card-content">
+                  <div class="dish-card-title">Mocofava</div>
+                  <p class="dish-card-desc">Acompanha: arroz, farofa, couve e ovo</p>
+                  <p class="dish-card-marmitex">🍱 Marmitex: R$40</p>
+                  <div class="dish-card-footer">
+                    <span class="dish-card-price">R$ 35</span>
+                    <span class="dish-card-badge">🔥 Mais pedido</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="dish-card">
+                <img class="dish-card-img" src="assets\images de blocos\PRATOS\SARAPÁTEL.png" alt="Sarapatel">
+                <div class="dish-card-content">
+                  <div class="dish-card-title">Sarapatel</div>
+                  <p class="dish-card-desc">Prato especial com tempero marcante</p>
+                  <p class="dish-card-marmitex">🍱 Marmitex: R$40</p>
+                  <div class="dish-card-footer">
+                    <span class="dish-card-price">R$ 35</span>
+                    <span class="dish-card-badge">⭐ Especial</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article id="quinta" class="day-card hidden bg-[#fff4e6] rounded-[2rem] border border-[#f1d5b2] shadow-lg overflow-hidden">
+          <div class="day-card-header bg-[#4e342e] text-white p-6">
+            <h3 class="day-card-title">Quinta-feira</h3>
+            <p class="day-card-subtitle">Carnes & acompanhamentos</p>
+          </div>
+          <div class="day-card-body p-6">
+            <div class="dish-grid">
+              <div class="dish-card">
+                <img class="dish-card-img" src="assets\images de blocos\PRATOS\COSTELA  COM BATATA.png" alt="Costela com Batata">
+                <div class="dish-card-content">
+                  <div class="dish-card-title">Costela com Batata</div>
+                  <p class="dish-card-desc">Acompanha arroz, feijão tropeiro, arrumadinho, salada e farofa</p>
+                  <p class="dish-card-marmitex">🍱 Marmitex: R$40</p>
+                  <div class="dish-card-footer">
+                    <span class="dish-card-price">R$ 35</span>
+                    <span class="dish-card-badge">🔥 Mais pedido</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="dish-card">
+                <img class="dish-card-img" src="assets\images de blocos\PRATOS\CARNE SECA ACEBOLADA.png" alt="Carne Seca Acebolada">
+                <div class="dish-card-content">
+                  <div class="dish-card-title">Carne Seca Acebolada</div>
+                  <p class="dish-card-desc">Acompanha arroz, feijão tropeiro, farofa e salada</p>
+                  <p class="dish-card-marmitex">🍱 Marmitex: R$40</p>
+                  <div class="dish-card-footer">
+                    <span class="dish-card-price">R$ 35</span>
+                    <span class="dish-card-badge">⭐ Especial</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article id="sexta" class="day-card hidden bg-white rounded-[2rem] border border-[#EDE7DE] shadow-lg overflow-hidden">
+          <div class="day-card-header bg-[#d35400] text-white p-6">
+            <h3 class="day-card-title">Sexta-feira</h3>
+            <p class="day-card-subtitle">Combinações prontas do Baião de Dois</p>
+          </div>
+          <div class="day-card-body p-6">
+            <div class="dish-grid">
+              <div class="dish-card">
+                <img class="dish-card-img" src="assets\images de blocos\PRATOS\Baião de Dois + Cabrito ao Molho.png" alt="Baião de Dois + Cabrito">
+                <div class="dish-card-content">
+                  <div class="dish-card-title">Baião de Dois + Cabrito ao Molho</div>
+                  <p class="dish-card-desc">Combinação perfeita com carne suculenta</p>
+                  <p class="dish-card-marmitex">🍱 Marmitex: R$40</p>
+                  <div class="dish-card-footer">
+                    <span class="dish-card-price">R$ 35</span>
+                    <span class="dish-card-badge">🔥 +pedido</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="dish-card">
+                <img class="dish-card-img" src="assets\images de blocos\PRATOS\Baião de Dois + Carne Seca.png">
+                <div class="dish-card-content">
+                  <div class="dish-card-title">Baião de Dois + Carne Seca</div>
+                  <p class="dish-card-desc">Clássico nordestino com carne desfiada</p>
+                  <p class="dish-card-marmitex">🍱 Marmitex: R$40</p>
+                  <div class="dish-card-footer">
+                    <span class="dish-card-price">R$ 35</span>
+                    <span class="dish-card-badge">⭐ Tradicional</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="dish-card">
+                <img class="dish-card-img" src="assets\images de blocos\PRATOS\Baião de Dois + Rabada.png" alt="Baião de Dois + Rabada">
+                <div class="dish-card-content">
+                  <div class="dish-card-title">Baião de Dois + Rabada</div>
+                  <p class="dish-card-desc">Sabor intenso e macio da rabada</p>
+                  <p class="dish-card-marmitex">🍱 Marmitex: R$40</p>
+                  <div class="dish-card-footer">
+                    <span class="dish-card-price">R$ 35</span>
+                    <span class="dish-card-badge">💪 Forte</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="dish-card">
+                <img class="dish-card-img" src="assets\images de blocos\PRATOS\Pudim de Raspa de Rapadura.png" alt="Pudim de Raspa de Rapadura">
+                <div class="dish-card-content">
+                  <div class="dish-card-title">Pudim de Raspa de Rapadura</div>
+                  <p class="dish-card-desc">Sobremesa doce e tradicional</p>
+                  <div class="dish-card-footer">
+                    <span class="dish-card-price">R$ 6</span>
+                    <span class="dish-card-badge">🍮 Sobremesa</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article id="sabado" class="day-card hidden bg-[#fff4e6] rounded-[2rem] border border-[#f1d5b2] shadow-lg overflow-hidden">
+          <div class="day-card-header bg-[#4e342e] text-white p-6">
+            <h3 class="day-card-title">Sábado</h3>
+            <p class="day-card-subtitle">Feijoada e sabores fortes</p>
+          </div>
+          <div class="day-card-body p-6">
+            <div class="dish-grid">
+              <div class="dish-card">
+                <img class="dish-card-img" src="assets/images de blocos/PRATOS/Feijoada Completa.png">
+                <div class="dish-card-content">
+                  <div class="dish-card-title">Feijoada Completa</div>
+                  <p class="dish-card-desc">Servida no ponto certo, com as melhores carnes e feijão</p>
+                  <p class="dish-card-marmitex">🍱 Marmitex: R$50</p>
+                  <div class="dish-card-footer">
+                    <span class="dish-card-price">R$ 40</span>
+                    <span class="dish-card-badge">🔥 Mais pedido</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="dish-card">
+                <img class="dish-card-img" src="assets/images de blocos/PRATOS/Combo Feijoada.png" alt="Combo Feijoada">
+                <div class="dish-card-content">
+                  <div class="dish-card-title">Combo Feijoada</div>
+                  <p class="dish-card-desc">Porção maior para aproveitar com a família.</p>
+                  <div class="dish-card-footer">
+                    <span class="dish-card-price">R$ 120</span>
+                    <span class="dish-card-badge">Combo</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="dish-card">
+                <img class="dish-card-img" src="assets\images de blocos\PRATOS\BUCHADA DE BODE.png" alt="Buchada de Bode">
+                <div class="dish-card-content">
+                  <div class="dish-card-title">Buchada de Bode</div>
+                  <p class="dish-card-desc">Acompanha arroz carreteiro e farofa</p>
+                  <p class="dish-card-marmitex">🍱 Marmitex: R$40</p>
+                  <div class="dish-card-footer">
+                    <span class="dish-card-price">R$ 40</span>
+                    <span class="dish-card-badge">⭐ Especial</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="dish-card">
+                <img class="dish-card-img" src="assets\images de blocos\PRATOS\Pudim de Raspa de Rapadura.png" alt="Pudim de Raspa de Rapadura">
+                <div class="dish-card-content">
+                  <div class="dish-card-title">Pudim de Raspa de Rapadura</div>
+                  <p class="dish-card-desc">Sobremesa doce e tradicional para fechar a refeição.</p>
+                  <div class="dish-card-footer">
+                    <span class="dish-card-price">R$ 6</span>
+                    <span class="dish-card-badge">Sobremesa</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article id="domingo" class="day-card hidden bg-white rounded-[2rem] border border-[#EDE7DE] shadow-lg overflow-hidden">
+          <div class="day-card-header bg-[#b45309] text-white p-6">
+            <h3 class="day-card-title">Domingo</h3>
+            <p class="day-card-subtitle">Baião de Dois e opções</p>
+          </div>
+          <div class="day-card-body p-6">
+            <div class="dish-grid">
+              <div class="dish-card">
+                <img class="dish-card-img" src="assets/images de blocos/PRATOS/Baião de Dois + Galinha Caipira.png" alt="Baião de Dois + Galinha Caipira">
+                <div class="dish-card-content">
+                  <div class="dish-card-title">Baião de Dois + Galinha Caipira</div>
+                  <p class="dish-card-desc">Frango com molho amarelo tradicional</p>
+                  <p class="dish-card-marmitex">🍱 Marmitex: R$40</p>
+                  <div class="dish-card-footer">
+                    <span class="dish-card-price">R$ 35</span>
+                    <span class="dish-card-badge">🍗 Frango</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="dish-card">
+                <img class="dish-card-img" src="assets\images de blocos\PRATOS\Baião de Dois + Rabada.png" alt="Baião de Dois + Rabada">
+                <div class="dish-card-content">
+                  <div class="dish-card-title">Baião de Dois + Rabada</div>
+                  <p class="dish-card-desc">Carne com osso ao molho intenso</p>
+                  <p class="dish-card-marmitex">🍱 Marmitex: R$40</p>
+                  <div class="dish-card-footer">
+                    <span class="dish-card-price">R$ 35</span>
+                    <span class="dish-card-badge">💪 Forte</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="dish-card">
+                <img class="dish-card-img" src="assets\images de blocos\PRATOS\Baião de Dois + Carne Seca.png">
+                <div class="dish-card-content">
+                  <div class="dish-card-title">Baião de Dois + Carne Seca Acebolada</div>
+                  <p class="dish-card-desc">Carne desfiada com cebola dourada</p>
+                  <p class="dish-card-marmitex">🍱 Marmitex: R$40</p>
+                  <div class="dish-card-footer">
+                    <span class="dish-card-price">R$ 35</span>
+                    <span class="dish-card-badge">⭐ Tradicional</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- DESTAQUES -->
+  <section id="destaques" class="py-24 bg-brown-dark section-reveal">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-14">
+        <span class="text-[#F4D03F] text-xs font-bold uppercase tracking-widest">Os favoritos</span>
+        <h2 class="font-playfair text-4xl md:text-5xl font-bold text-white mt-3">Destaques da Casa</h2>
+        <p class="text-white/60 mt-4 max-w-xl mx-auto">Nossos três pratos mais amados, preparados com o melhor do sertão nordestino</p>
+      </div>
+      <div class="grid md:grid-cols-3 gap-8">
+
+        <div class="dish-card">
+          <img class="dish-card-img" src="assets/images de blocos/PRATOS/Baião de Dois + Rabada.png" alt="Baião de Dois + Rabada">
+          <div class="dish-card-content">
+            <div class="dish-card-title">Baião de Dois + Rabada</div>
+            <p class="dish-card-desc">Clássico nordestino com baião bem temperado acompanhado de rabada suculenta e macia</p>
+            <div class="dish-card-footer">
+              <span class="dish-card-price">R$ 35</span>
+              <span class="dish-card-badge">FORTE</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="dish-card">
+          <img class="dish-card-img" src="assets\images de blocos\PRATOS\FEIJOADA COMPLETA.png" alt="Feijoada Completa">
+          <div class="dish-card-content">
+            <div class="dish-card-title">Feijoada Completa</div>
+            <p class="dish-card-desc">Feijoada completa e rica em sabor, preparada com carnes selecionadas e tempero caseiro</p>
+            <div class="dish-card-footer">
+              <span class="dish-card-price">R$ 40</span>
+              <span class="dish-card-badge"> Tradição</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="dish-card">
+          <img class="dish-card-img" src="assets/images de blocos/PRATOS/Baião de Dois + Carne Seca.png" alt="Baião de Dois + Carne Seca">
+          <div class="dish-card-content">
+            <div class="dish-card-title">Baião de Dois + Carne Seca Acebolada</div>
+            <p class="dish-card-desc">Combinação queridinha: Carne desfiada no ponto certo.</p>
+            <div class="dish-card-footer">
+              <span class="dish-card-price">R$ 35</span>
+              <span class="dish-card-badge"> Combinação</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- DIFERENCIAIS -->
+  <section class="py-24 bg-white section-reveal">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-14">
+        <span class="text-[#E67E22] text-xs font-bold uppercase tracking-widest">Por que nos escolher</span>
+        <h2 class="font-playfair text-4xl md:text-5xl font-bold text-[#6E2C00] mt-3">Nossos Diferenciais</h2>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="diferencial-card">
+          <div class="diferencial-icon">🌿</div>
+          <h3 class="font-playfair text-lg font-bold text-[#6E2C00] mb-2">Ingredientes Frescos</h3>
+          <p class="text-gray-500 text-sm leading-relaxed">Selecionados diariamente nos melhores mercados e diretamente dos produtores locais.</p>
+        </div>
+        <div class="diferencial-card">
+          <div class="diferencial-icon">📜</div>
+          <h3 class="font-playfair text-lg font-bold text-[#6E2C00] mb-2">Receitas Tradicionais</h3>
+          <p class="text-gray-500 text-sm leading-relaxed">Passadas de geração em geração, preservando o sabor autêntico do Nordeste brasileiro.</p>
+        </div>
+        <div class="diferencial-card">
+          <div class="diferencial-icon">🏠</div>
+          <h3 class="font-playfair text-lg font-bold text-[#6E2C00] mb-2">Ambiente Acolhedor</h3>
+          <p class="text-gray-500 text-sm leading-relaxed">Como em casa, só que melhor. Um espaço onde cada visita se torna uma memória afetiva.</p>
+        </div>
+        <div class="diferencial-card">
+          <div class="diferencial-icon">💰</div>
+          <h3 class="font-playfair text-lg font-bold text-[#6E2C00] mb-2">Preços Justos</h3>
+          <p class="text-gray-500 text-sm leading-relaxed">Qualidade sem pesar no bolso. Acreditamos que a boa comida é para todos.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section id="contato" class="py-24 bg-bege section-reveal">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-14">
+        <span class="text-[#E67E22] text-xs font-bold uppercase tracking-widest">Fale conosco</span>
+        <h2 class="font-playfair text-4xl md:text-5xl font-bold text-[#6E2C00] mt-3">Contato</h2>
+      </div>
+      <div class="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
+
+        <!-- Info -->
+          <div>
+          <div class="contato-item">
+            <div class="contato-icon">📍</div>
+            <div>
+              <div class="font-semibold text-[#6E2C00] mb-1">Endereço</div>
+              <div class="text-gray-500 text-sm">R. Vicente Antônio Nogueira, 189 - Parque Rodrigo Barreto</div>
+            </div>
+          </div>
+          <div class="contato-item">
+            <div class="contato-icon">🕐</div>
+            <div>
+              <div class="font-semibold text-[#6E2C00] mb-1">Horário de Funcionamento</div>
+              <div class="text-gray-500 text-sm">
+                <span class="font-medium text-gray-700">terça – Dom:</span> 7h às 19:30<br/>
+              </div>
+            </div>
+          </div>
+          <div class="contato-item">
+            <div class="contato-icon">📞</div>
+            <div>
+              <div class="font-semibold text-[#6E2C00] mb-1">Telefone</div>
+              <div class="text-gray-500 text-sm">(11) 95902-8938</div>
+            </div>
+          </div>
+          <center><a href="https://wa.me/5511959028938" target="_blank"
+            class="btn-scale mt-6 inline-flex items-center gap-3 bg-green-500 hover:bg-green-600 text-white font-bold px-8 py-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-200 text-sm">
+            <span class="text-xl">💬</span> Chamar no WhatsApp
+          </a>
+        </div></center>
+
+        <div class="mt-8 rounded-3xl overflow-hidden shadow-lg">
+  <iframe
+  src="https://www.google.com/maps?q=Casa%20do%20Norte%20R.%20Vicente%20Antonio%20Nogueira%2C%20189%20-%20Parque%20Rodrigo%20Barreto&output=embed"
+  width="100%"
+  height="320"
+  style="border:0;"
+  allowfullscreen=""
+  loading="lazy"
+  referrerpolicy="no-referrer-when-downgrade">
+</iframe>
+</div>
+
+
+   <footer class="site-footer text-black py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col sm:flex-row justify-between items-center gap-4">
+        <div>
+          <div class= "text-black font-playfair text-xl font-bold">Casa do Norte Paraíba</div>
+          <div class="text-black/55 text-sm mt-3">O verdadeiro sabor do Nordeste</div>
+        </div>
+        <div class="text-black/12 text-sm text-center">© 2024 Sabor do Sertão.</div>
+        <div class="text-black/12 text-sm text-center">Todos os direitos reservados.</div>
+        
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

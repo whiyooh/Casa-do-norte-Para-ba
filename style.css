@@ -30,7 +30,7 @@ body {
 .site-footer text-white py-12 {
   background: var(--brown-dark);
   n
-}
+} 
 .font-playfair { font-family: 'Playfair Display', serif; color: #ffffff; }
 .font-inter    { font-family: 'Inter', sans-serif; }
 
@@ -873,4 +873,16 @@ html {
 }
 html::-webkit-scrollbar {
   display: none; /* Chrome, Safari and Opera */
+}
+/* =============================
+    RODAPÉ FOOOTER
+============================= */
+.site-footer {
+  background: rgb(204, 140, 104);
+  color: rgb(126, 113, 105);
+  text-align: center;
+  border-radius: 15px;
+  margin: auto;
+  width: 100%;
+  display: flex;
 }

@@ -878,11 +878,14 @@ html::-webkit-scrollbar {
     RODAPÉ FOOOTER
 ============================= */
 .site-footer {
+  padding: 50px 20px;
   background: rgb(204, 140, 104);
-  color: rgb(126, 113, 105);
+  color: #ffffff;
   text-align: center;
+  background-image: linear-gradient( #f19e50 ,rgb(95, 45, 17));
   border-radius: 15px;
-  margin: auto;
   width: 100%;
   display: flex;
+  justify-content: center;
+  align-items: center;
 }

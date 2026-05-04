@@ -6,4 +6,4 @@ O desenvolvimento prioriza uma estrutura responsiva, navegação intuitiva e boa
 
 Este projeto representa a criação de uma solução digital voltada para pequenos negócios locais, fortalecendo a comunicação da marca e aproximando o público da experiência autêntica de uma verdadeira Casa do Norte.
 
-Page site: https://69f7d443015a9682d0fa244f--casa-do-norte-paraiba.netlify.app/
+Page site: [https://69f7d443015a9682d0fa244f--casa-do-norte-paraiba.netlify.app/](https://69f7e1eee74daf0008ab9954--casa-do-norte-paraiba.netlify.app/)
